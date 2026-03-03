@@ -1,31 +1,36 @@
 # opencode-sales-agent
 
-Standalone OpenCode CLI sales sub-agent plugin for Windows 11.
+Standalone OpenCode CLI sales sub-agent plugin for Windows.
 
 - Primary command: `/sales`
 - Package name: `opencode-sales-agent`
 - Source inspiration: Anthropic knowledge-work-plugins sales plugin
 - License: Apache-2.0
 
-## Features
+## Commands
 
-- `/sales` router command with subcommand flow:
-  - `call-summary`
-  - `forecast`
-  - `pipeline-review`
-  - `create-asset`
-- Sales skills converted for OpenCode:
-  - `account-research`
-  - `call-prep`
-  - `competitive-intelligence`
-  - `create-an-asset`
-  - `daily-briefing`
-  - `draft-outreach`
-- Optional MCP connector catalog for CRM, enrichment, chat, docs, and transcripts
-- Windows-native state management:
-  - `%USERPROFILE%\.local\share\opencode-sales-agent\state.json`
+```text
+/sales              # Master hub - shows all options
+/sales call-summary # Summarize sales calls
+/sales forecast     # Revenue forecasting
+/sales pipeline-review # Pipeline analysis
+```
 
-## Windows 11 Installation
+## Skills
+- `account-research`
+- `call-prep`
+- `competitive-intelligence`
+- `create-an-asset`
+- `daily-briefing`
+- `draft-outreach`
+
+## Requirements
+
+- **Node.js**: recommended 22+
+- **npm**: recommended 10+
+- **Runtime dependency**: `@opencode-ai/plugin` (installed automatically with package)
+
+## Windows Installation
 
 ## 1) Install package
 
@@ -57,21 +62,6 @@ Add package to plugin array:
 
 ```powershell
 opencode
-```
-
-## 4) Use the sales command
-
-```text
-/sales
-```
-
-Or direct subcommand routing:
-
-```text
-/sales call-summary
-/sales forecast
-/sales pipeline-review
-/sales create-asset
 ```
 
 ## Optional MCP Setup

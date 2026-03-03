@@ -1,6 +1,6 @@
 # opencode-marketing-agent
 
-Standalone OpenCode marketing sub-agent plugin for Windows 11.
+Standalone OpenCode marketing sub-agent plugin for Windows. 
 
 ## Commands
 - `/marketing` (hub command)
@@ -18,6 +18,12 @@ Standalone OpenCode marketing sub-agent plugin for Windows 11.
 - `brand-voice`
 - `competitive-analysis`
 - `performance-analytics`
+
+## Requirements
+
+- **Node.js**: recommended 22+
+- **npm**: recommended 10+
+- **Runtime dependency**: `@opencode-ai/plugin` (installed automatically with package)
 
 ## Installation (Windows)
 

@@ -1,6 +1,6 @@
 # opencode-data-agent
 
-Standalone OpenCode data sub-agent plugin for Windows 11.
+Standalone OpenCode data sub-agent plugin for Windows. 
 
 ## Commands
 - `/data` (master hub)
@@ -19,6 +19,21 @@ Standalone OpenCode data sub-agent plugin for Windows 11.
 - `data-validation`
 - `interactive-dashboard-builder`
 - `data-context-extractor`
+
+## Requirements
+
+- **Node.js**: recommended 22+
+- **npm**: recommended 10+
+- **Runtime dependency**: `@opencode-ai/plugin` (installed automatically with package)
+
+### Python (for visualization/dashboard commands)
+
+- **Required for**: `/create-viz`, `/build-dashboard`
+- **Version**: Python 3.10+
+- **Install**: https://www.python.org/downloads/
+- **Required libraries**: `pandas`, `matplotlib`, `seaborn`, `plotly`
+
+If Python is unavailable, plugin falls back to instructions/code output.
 
 ## Installation (Windows)
 
@@ -40,16 +55,6 @@ Add plugin to `%USERPROFILE%\.config\opencode\opencode.jsonc`:
 Restart OpenCode and run `/data`.
 
 ## MCP behavior
-- MCP defaults are auto-registered from `mcp/config.json` via plugin `config` hook.
-- User `opencode.jsonc` values override plugin defaults.
-- Connectors are optional in practice; if unavailable, commands can run in manual input mode.
-
-## Python requirement
-- Required for full runtime output in `/create-viz` and `/build-dashboard`.
-- Windows install: https://www.python.org/downloads/
-- If Python is unavailable, plugin falls back to instructions/code output.
-
-## SQL behavior
 - `/write-query` generates SQL code only.
 - User runs SQL against their own database/warehouse environment.
 
@@ -72,3 +77,20 @@ knowledge-work-plugins repository, licensed under Apache 2.0.
 - **Original source:** https://github.com/anthropics/knowledge-work-plugins/tree/main/data
 - **Architecture inspired by:** [oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode)
 - **License:** Apache 2.0 -- see LICENSE file for details
+
+---
+
+## ⚠️ Disclaimer
+
+This plugin has been tested in a controlled environment with sample datasets.
+
+Before using on full-scale or production data:
+
+- Test with your own data in a safe/isolated environment first
+- Evaluate the results carefully before relying on them
+- Python-dependent commands (`/create-viz`, `/build-dashboard`) require `pandas`, `matplotlib`, `seaborn`, `plotly` installed
+- SQL commands (`/write-query`) generate code only — always review before running against a real database
+
+Found unexpected behavior or bugs? Please report your experience in the issue section.
+
+Your feedback helps improve accuracy and future updates.

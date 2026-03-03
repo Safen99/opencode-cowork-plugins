@@ -1,6 +1,12 @@
-# OpenCode Plugins
+# OpenCode Cowork Plugins
 
-Standalone OpenCode CLI plugins for Windows 11. Ported from [Anthropic's knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins).
+Standalone OpenCode CLI plugins for Windows. Ported from [Anthropic's knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins).
+
+## Prerequisites
+
+- **Node.js**: 22+ recommended
+- **npm**: 10+ recommended
+- **Python**: 3.10+ recommend 
 
 ## Available Plugins
 
